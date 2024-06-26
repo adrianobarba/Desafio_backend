@@ -13,8 +13,14 @@ public class OrderItem {
     private BigDecimal prince;
 
     public OrderItem(){
-
     }
+
+    public OrderItem(String product, Integer quantity, BigDecimal prince) {
+        this.product = product;
+        this.quantity = quantity;
+        this.prince = prince;
+    }
+
     public String getProduct() {
         return product;
     }
